@@ -1,0 +1,15 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "myproject API",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"./docker-compose.extend.yml"
+	],
+	"service": "api",
+	"shutdownAction": "stopCompose",
+	"forwardPorts": [
+		8080
+	],
+	"workspaceFolder": "/api"
+}

@@ -1,0 +1,23 @@
+type Query {
+  user(id: ID!): User
+}
+
+type User {
+  id: ID
+  email: String
+}
+
+input userInput {
+  email: String!
+  password: String!
+}
+
+type AuthPayload {
+  token: String
+  user: User
+}
+
+type Mutation {
+  register(input: userInput): AuthPayload
+  login(input: userInput): AuthPayload
+}
