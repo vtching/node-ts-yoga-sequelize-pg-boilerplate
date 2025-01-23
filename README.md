@@ -9,11 +9,39 @@ Boilerplate to setup API:
 
 Dev setup involves using VSCode and Dev Containers
 
-To use with the workspace to bootstrap the API to replace [myproject] with actual project name
+To use with the workspace to bootstrap the API that will setup prerequisites and replace [myproject] with actual project name in this repository.
+
+A package.json is available to simplify setup.
+Below are instructions on how to install the packages manually to better understand each package and role.
 
 API will be available at http://localhost:8080/api/graphql
 
-A package.json is available, below are instructions to install the packages to better understand each package and role.
+To use the user backend model and user GraphQL queries, run:
+```
+npx sequelize-cli db:migrate
+```
+
+In GraphiQL:
+```
+mutation UserRegister($email: String!, $password: String!) {
+  register(input: {
+    email: $email,
+    password: $password
+  }) {
+    user {
+      email
+    }
+    token
+  }
+}
+```
+with variables
+```
+{
+  "email": "testgraphiql@test.com",
+  "password": "testgraphiqlpwd"
+}
+```
 
 ## File Structure
 
