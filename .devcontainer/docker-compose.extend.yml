@@ -7,3 +7,4 @@ services:
     image: myproject-api-devcontainer
     volumes:
       - .:/api:cached
+      - /api/node_modules
