@@ -14,6 +14,15 @@ To use with the workspace to bootstrap the API that will setup prerequisites and
 A package.json is available to simplify setup.
 Below are instructions on how to install the packages manually to better understand each package and role.
 
+## Test the API
+
+Open the repository with VSCode with Dev Containers extension, build the image and reopen in the container.
+
+In VSCode, open a terminal in the dev container:
+```
+npm run dev
+```
+
 API will be available at http://localhost:8080/api/graphql
 
 To use the user backend model and user GraphQL queries, run:
