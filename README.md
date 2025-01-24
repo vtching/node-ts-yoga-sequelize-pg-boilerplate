@@ -9,7 +9,7 @@ Boilerplate to setup API:
 
 Dev setup involves using VSCode and Dev Containers
 
-To use with the workspace to bootstrap the API that will setup prerequisites and replace [myproject] with actual project name in this repository.
+To use with the workspace [react-native-app-workspace](https://github.com/vtching/react-native-app-workspace) to bootstrap the API that will setup prerequisites and replace [myproject] with actual project name in this repository.
 
 A package.json is available to simplify setup.
 Below are instructions on how to install the packages manually to better understand each package and role.
